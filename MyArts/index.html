@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ederlyn Sarmiento | Art Portfolio 2015–2026</title>
+    <meta name="description" content="The art journey of Ederlyn Claud Sarmiento — sketches, portraits and studies from 2015 to 2026.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="brand">ECS <span>· Art</span></a>
+            <ul class="nav-menu">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://ecsarmiento.github.io" target="_blank" rel="noopener" class="back-profile">← Back to Main Profile</a></li>
+            </ul>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow">A Visual Journey · 2015 — 2026</p>
+                <h1>The Art of <span class="accent">Ederlyn</span></h1>
+                <p class="hero-sub">Sketches, portraits and studies — over a decade of lines, shadows and stories on paper.</p>
+                <div class="hero-actions">
+                    <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                    <a href="https://ecsarmiento.github.io" target="_blank" rel="noopener" class="btn btn-ghost">Main Profile</a>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                <div class="portrait-ring">
+                    <img src="images/Eds.jpg" alt="Portrait of Ederlyn Sarmiento" loading="lazy" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Gallery by Year</h2>
+        <p class="section-note">2015–2025 archives are being digitized. 2026 collection is live below.</p>
+
+        <!-- Year filter (built by JS) -->
+        <div class="filter-bar" id="filterBar"></div>
+
+        <!-- Grid (built by JS) -->
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+        <div class="about-inner">
+            <h2 class="section-title">About the Artist</h2>
+            <p>Ederlyn Claud Sarmiento is an ICT teacher and self-taught artist who works mainly in ballpoint pen and pencil.
+               Her art captures quiet portraits and everyday moments. This gallery traces her growth from 2015 to the present.
+               When she is not in the classroom, she is drawing, painting, or mentoring young artists.</p>
+            <a href="https://ecsarmiento.github.io" target="_blank" rel="noopener" class="btn btn-primary">Visit My Main Profile →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 Ederlyn Sarmiento · Art Portfolio</p>
+        <p><a href="https://ecsarmiento.github.io" target="_blank" rel="noopener">ecsarmiento.github.io</a> · Made with lines &amp; code</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+        <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+        <figure class="lb-frame">
+            <img id="lbImg" src="" alt="">
+            <figcaption id="lbCaption"></figcaption>
+        </figure>
+        <button class="lb-next" id="lbNext" aria-label="Next">›</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
